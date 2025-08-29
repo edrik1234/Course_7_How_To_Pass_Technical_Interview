@@ -13,7 +13,7 @@ class Node:
         return self._data
 
 head = None
-string_input = input(("please enter the string that you want to convert to linked list node "))
+string_input = input(("please enter the string that you want to convert to linked list of nodes "))
 new_node = Node(string_input[0])
 head = new_node
 for node_value in (string_input):
@@ -27,7 +27,7 @@ current_node_to_print = head
 while current_node_to_print != None:
       print(current_node_to_print.get_data())
       current_node_to_print = current_node_to_print.get_next()
-print("hi")
+
 
 
 
