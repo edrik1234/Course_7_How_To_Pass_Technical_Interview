@@ -27,7 +27,7 @@ current_node_to_print = head
 while current_node_to_print != None:
       print(current_node_to_print.get_data())
       current_node_to_print = current_node_to_print.get_next()
-
+print("hi")
 
 
 
