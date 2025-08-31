@@ -14,18 +14,18 @@ class Node:
 
 head = None
 string_input = input(("please enter the string that you want to convert to linked list of nodes "))
-new_node = Node(string_input[0])
-head = new_node
-for node_value in (string_input):
-    if node_value == string_input[0]:
-        continue
-    current = new_node
-    new_node = Node(node_value)
-    current.set_next(new_node)
+for i, node_value in enumerate(string_input):
+    if i == 0:
+        new_node = Node(node_value)
+        head = new_node
+    else:
+        current = new_node
+        new_node = Node(node_value)
+        current.set_next(new_node)
 
 current_node_to_print = head
 while current_node_to_print != None:
-      print(current_node_to_print.get_data())
+      print(current_node_to_print.get_data(), end = "->")
       current_node_to_print = current_node_to_print.get_next()
 
 
